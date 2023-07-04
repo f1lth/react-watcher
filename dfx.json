@@ -1,0 +1,29 @@
+{
+  "canisters": {
+    "watcher_react_backend": {
+      "main": "src/watcher_react_backend/main.mo",
+      "type": "motoko"
+    },
+    "watcher_react_frontend": {
+      "dependencies": [
+        "watcher_react_backend"
+      ],
+      "frontend": {
+        "entrypoint": "src/watcher_react_frontend/src/index.html"
+      },
+      "source": [
+        "src/watcher_react_frontend/assets",
+        "dist/watcher_react_frontend/"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
